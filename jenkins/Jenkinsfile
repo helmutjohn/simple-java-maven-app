@@ -1,13 +1,5 @@
 pipeline {
 
-    stages {
-      stage('set permission')
-      {
-       steps {
-         sh "sudo chown root:jenkins /var/run/docker.sock"
-     }
-     }
-     }
  
     agent {
         docker {
